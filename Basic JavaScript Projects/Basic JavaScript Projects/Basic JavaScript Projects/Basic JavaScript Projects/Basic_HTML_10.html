@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src="JS/Basic_JavaScript_10.js"></script>
+
+        <p id="Loop"></p>
+        <button onclick="Call_Loop()">Click here to execute the loop.</button>
+
+        <p id="string_Length"></p>
+        <button onclick="length_property()">String Length Property</button>
+
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here</button>
+
+        <p id="Array"></p>
+        <button onclick="array_Function()">Click here.</button>
+
+        <p id="Constant"></p>
+        <button onclick="constant_function()">Click here!</button>
+
+         <button onclick="function_Let()">Click here</button>
+
+         <p id="Dinner_Object"></p>
+         <button onclick="dinnerObject()">What's for dinner?</button>
+
+         <p>This returns the value of PI:</p>
+         <p id="demo"></p>
+         <script>
+             function myFunction(){
+                 return Math.PI;
+             }
+             document.getElementById("demo").innerHTML = myFunction();
+         </script>
+
+         <p>A loop with a <b>break</b> statement.</p>
+         <p id="break_Statement"></p>
+         <script>
+             var text = "";
+             var i;
+             for (i = 0; i <10; i++) {
+                 if (i === 3) { break; }
+                 text += "The number is " + i + "<br>";
+             }
+             document.getElementById("break_Statement").innerHTML = text;
+         </script>
+
+         <p>A loop with a continue statement, skipping the step where i = 2.</p>
+         <p id="continue_statement"></p>
+         <script>
+             var text = "";
+             var i;
+             for (i = 0; i < 5; i++) {
+                 if (i === 2) { continue; }
+                 text += "The number is " + i + "<br>";
+             }
+             document.getElementById("continue_statement").innerHTML = text;
+         </script>
+
+        
+    </body>
+</html>
