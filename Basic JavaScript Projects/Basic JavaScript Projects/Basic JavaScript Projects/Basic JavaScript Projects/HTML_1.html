@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="JavaScript_1.js"></script>
+    </head>
+    <body>
+        
+        <!-- Timer function that was not included with slideshow assignment -->
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+
+        <!-- Switch statement -->
+        <h1>What is your favorite animal?</h1>
+        <h3>Pick your favorite from the list below:</h3>
+        <ul>
+            <li>Whale</li>
+            <li>Lion</li>
+            <li>Bear</li>
+            <li>Elephant</li>
+            <li>Snake</li>
+            <li>Dog</li>
+            <li>Cat</li>
+            <li>Frog</li>
+        </ul>
+        <h3>Enter your choice below:</h3>
+        <input id ="Animal_input" type="text">
+        <button onclick="Animal_function()">Submit Animal</button>
+        <p id="Output"></p>
+
+        <!-- Get element by class name -->
+        <h1 class="Click">This text will change!</h1>
+        <h3 class="Click">This one will not change.</h3>
+        <button onclick="className_function()">Click here</button>
+        <br>
+        <!-- Canvas element with border -->
+        <canvas id="myCanvas" width="600" height="300" style="border: 10px solid blue;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var grd = ctx.createLinearGradient(0, 0, 170, 0);
+grd.addColorStop(0, "green");
+grd.addColorStop(1, "white");
+
+ctx.fillStyle = grd;
+ctx.fillRect(100, 20, 150, 100);
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.font = "30px Georgia";
+ctx.strokeText("This is COOL!", 10, 50);
+
+ctx.font = "50px Verdana";
+// Create gradient
+
+var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "red");
+gradient.addColorStop("0.5", "blue");
+gradient.addColorStop("1.0", "magenta");
+
+//fill with gradient
+ctx.strokeStyle = gradient;
+ctx.strokeText("Artsy Fartsy!", 90, 90);
+
+
+</script>
+
+    </body>
+</html>
